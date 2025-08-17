@@ -43,7 +43,7 @@ npm run build
 
 # 2. Set production environment variables
 export NODE_ENV=production
-export PORT=8000
+export PORT=3000
 export MONGO_URI=your-production-mongodb-url
 export SECRET=your-production-secret
 
@@ -84,7 +84,7 @@ Create a `.env.production` file (don't commit this to git):
 
 ```bash
 NODE_ENV=production
-PORT=8000
+PORT=3000
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/goat-cafe
 SECRET=your-super-secure-production-secret
 ```
@@ -164,7 +164,7 @@ npm run build
 # 2. Test production build locally
 npm start
 
-# 3. Visit http://localhost:8000
+# 3. Visit http://localhost:3000
 # 4. Test all routes and refresh functionality
 ```
 
