@@ -36,6 +36,7 @@ orderSchema.virtual('orderId').get(function() {
   return this.id.slice(-6).toUpperCase();
 });
 
+// statics is for the models
 orderSchema.statics.getCart = function(userId) {
   // 'this' is the Order model
   return this.findOneAndUpdate(
@@ -49,6 +50,7 @@ orderSchema.statics.getCart = function(userId) {
   );
 };
 
+// methods is for the documents (what we recieve from the database)
 orderSchema.methods.addItemToCart = async function(itemId) {
   const cart = this;
   // Check if item already in cart
